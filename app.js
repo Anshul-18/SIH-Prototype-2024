@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const ejs = require('ejs');
+const ejsMate = require("ejs-mate");
 
 const app = express();
 const port = 3000;
@@ -8,6 +9,7 @@ const port = 3000;
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
+app.engine('ejs', ejsMate); 
 
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
@@ -25,4 +27,11 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
     res.render("layouts/boilerplate");
   });
-  
+
+app.get("/signup", (req, res) => {
+    res.render("users/signup");
+  });
+
+app.get("/login", (req, res) => {
+    res.render("users/login");
+  });
