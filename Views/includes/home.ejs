@@ -1,0 +1,159 @@
+<%- layout("/layouts/boilerplate.ejs") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Popup Structure -->
+     <div class="popup">
+        <button class="close-btn">&times;</button>
+        <img src="/images/home/loader_img.png" alt="Welcome Image">
+        <div class="text-container">Welcome to Our Website!</div>
+    </div> 
+
+
+    <div class="image-section">
+        <img src="/images/home/template.avif" alt="Descriptive Text" class="responsive-image">
+    </div>
+
+    <!-- News Section -->
+    <div class="update-section">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="heading-container">
+                <h2>Job Updates</h2>
+                <a href="#" class="view-all">View All</a>
+            </div>
+            <div class="update-card">
+                <p>New job openings in tech sector. Check out the latest positions available.
+                    Stay ahead in your career with the latest job updates from across various sectors! Our Job Updates section brings you real-time information on the most recent and relevant job openings, tailored to meet your career aspirations.
+
+                    Here, you’ll find a curated list of job opportunities in diverse fields, ranging from technology and finance to education and healthcare. Whether you are a fresh graduate, an experienced professional, or someone looking to shift careers, our updates are designed to help you find the perfect role.
+
+                    We strive to provide timely and accurate job information to support your job search and career development. Check back frequently to discover new positions, learn about upcoming recruitment events, and access valuable resources that can help you succeed in your job hunt.
+
+                    Don’t miss out on your next career opportunity—explore our Job Updates section and take the next step towards achieving your professional goals!
+                </p>
+                <span class="timestamp">August 18, 2024 - 10:00 AM</span>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="card">
+                <h3>Data Science</h3>
+                <p>  <ul class="bulletin-points">
+                    <li><strong>Data Scientist:</strong> Analyze data to uncover trends and insights.</li>
+                    <li><strong>Machine Learning Engineer:</strong> Develop and deploy machine learning models.</li>
+                    <li><strong>Data Analyst:</strong> Create reports and visualizations to support business decisions.</li>
+                </ul></p>
+            </div>
+            <div class="card">
+                <h3>Full Stack Developer Job Opportunities</h3>
+                <p><ul class="bulletin-points">
+                    <li><strong>Front-End Development:</strong> Build and maintain user interfaces using HTML, CSS, and JavaScript.</li>
+                    <li><strong>Back-End Development:</strong> Develop server-side logic and APIs using languages like Node.js, Python, or Java.</li>
+                    <li><strong>Database Management:</strong> Design and manage databases, ensuring efficient data storage and retrieval.</li>
+                </ul></p>
+            </div>
+            <div class="card">
+                <h3>Card Title 3</h3>
+                <p>Some content for card 3.</p>
+            </div>
+            <div class="card">
+                <h3>Card Title 4</h3>
+                <p>Some content for card 4.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Cards Section -->
+    <section class="home-static-btn">
+        <h2 style="text-align: center; ">Growing Sectors</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <a target="_blank" class="home-static-btn-items" href="#">
+                    <img src="/images/home/bg_flagship.png" alt="Technology" class="card-image">
+                    <h3>Technology</h3>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://sampark.rajasthan.gov.in/" target="_blank" class="home-static-btn-items">
+                    <img src="/images/home/helpdesk.png" alt="Education" class="card-image">
+                    <h3>Education</h3>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="/pages/government-order/images/409/43/2979" class="home-static-btn-items">
+                    <img src="/images/home/bg_raj_cal.png" alt="Marketing" class="card-image">
+                    <h3>Marketing</h3>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" class="home-static-btn-items" href="https://schemes.rajasthan.gov.in?lan=en">
+                    <img src="/images/home/bg_sampark.png" alt="Design" class="card-image">
+                    <h3>Design</h3>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" class="home-static-btn-items" href="https://schemes.rajasthan.gov.in/scheme/flagship?lan=en">
+                    <img src="/images/home/bg_scheme.png" alt="Finance" class="card-image">
+                    <h3>Finance</h3>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://eproc.rajasthan.gov.in/nicgep/app" target="_blank" class="home-static-btn-items">
+                    <img src="/images/home/bg_tender.png" alt="Human Resources" class="card-image">
+                    <h3>Human Resources</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- Pie Chart Section -->
+<section class="pie-chart-section">
+    <h2>Pie Chart Example</h2>
+    <div class="pie-chart-container">
+        <div class="pie-chart">
+            <canvas id="myPieChart"></canvas>
+        </div>
+        <div class="pie-chart-details">
+            <h3>Chart Details</h3>
+            <ul>
+                <li><strong>Red:</strong> 12 units</li>
+                <li><strong>Blue:</strong> 19 units</li>
+                <li><strong>Yellow:</strong> 3 units</li>
+                <li><strong>Green:</strong> 5 units</li>
+                <li><strong>Purple:</strong> 2 units</li>
+                <li><strong>Orange:</strong> 3 units</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-us-content">
+            <h2>About Us</h2>
+            <p>Welcome to the Rajasthan Freelancing Portal, a key initiative by the Rajasthan Government aimed at fostering a thriving freelance community within our state. We are committed to bridging the gap between talented freelancers and organizations seeking skilled professionals for diverse projects.
+
+                Our platform provides a user-friendly interface where freelancers can find exciting opportunities, access resources for skill development, and connect with potential clients. We are dedicated to supporting freelancers at every stage of their career, from those just starting out to seasoned professionals looking for new challenges.
+        
+                At Rajasthan Government, we believe in the power of freelancing to drive innovation and economic growth. By providing a robust platform for freelancers, we aim to contribute to the state’s dynamic workforce and help individuals achieve their professional goals.
+        
+                Join us in shaping the future of freelancing in Rajasthan. Explore our platform, connect with opportunities, and be a part of a vibrant community dedicated to excellence and growth.</p>
+        </div>
+    </section>
+    <script src="/javascripts/home.js"></script>
+
+</body>
+</html>

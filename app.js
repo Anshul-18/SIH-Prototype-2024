@@ -25,7 +25,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-    res.render("layouts/boilerplate");
+    res.render("includes/home");
   });
 
 app.get("/signup", (req, res) => {

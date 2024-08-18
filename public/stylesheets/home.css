@@ -1,0 +1,366 @@
+
+
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none; /* Hidden by default */
+}
+
+.popup img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.popup .text-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Cursive', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none; /* Hidden by default */
+}
+
+/* Image Section Styling */
+.image-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Static Button Styling */
+.home-static-btn {
+    padding: 20px 0;
+    background-image: url('/images/home/bg_whats_new.png');
+}
+
+.home-static-btn-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    position: relative;
+    margin: 15px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 168px;
+    background-color: #000;
+}
+
+.home-static-btn-items:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-static-btn-items h3 {
+    position: absolute;
+    color: #000;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.home-static-btn-items i {
+    display: none;
+}
+
+/* News Section Styling */
+/* News Section Styling */
+
+.left-section {
+flex: 1;
+margin-right: 20px;
+/* background-color: rgba(255, 255, 255, 0.8); */
+/* Optional: Add a semi-transparent white background to make text more readable */
+padding: 20px; /* Add padding to the content */
+border-radius: 10px; /* Add rounded corners */
+}
+
+.heading-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.heading-container h2 {
+margin: 0;
+color: #333; /* Ensure the text is readable on the background */
+}
+
+.view-all {
+color: #007bff;
+text-decoration: none;
+}
+
+.view-all:hover {
+text-decoration: underline;
+}
+
+/* Transparent Job Updates Cards */
+.update-card {
+background: rgba(255, 255, 255, 0.2); /* Set the background to transparent */
+padding: 15px;
+border-radius: 5px;
+border: 2px solid pink; /* Add pink border */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-top: 15px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.update-card p {
+color: #333; /* Ensure text color is readable */
+}
+
+.update-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.update-section{
+    display: flex;
+    padding: 20px;
+    background-image: url('/images/home/bg-pattern.png'); /* Add your background image here */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+}
+
+.timestamp {
+display: block;
+margin-top: 10px;
+font-size: 0.9em;
+color: #666;
+}
+
+.right-section {
+flex: 1;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+/* Transparent Right Section Cards */
+.card {
+background: rgba(255, 255, 255, 0.2); /* Set the background to transparent */
+padding: 15px;
+border-radius: 5px;
+border: 2px solid pink; /* Add pink border */
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+color: #333; /* Ensure text color is readable */
+}
+
+.card h3 {
+margin-top: 0;
+}
+
+.bulletin-points {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.bulletin-points li {
+    margin-bottom: 8px;
+}
+
+
+
+/* Ensure proper alignment and spacing */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* About Us Section Styling */
+.about-us {
+    background-image: url('/images/home/bg_whats_new.png');
+    /* background-image: url('/images/home/get_bg.png'); */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+    padding: 60px 20px; /* Adjusts padding to ensure content isn't too close to the edges */
+    text-align: center; /* Centers the text within the section */
+    /* color: #fff;  */
+    color: #000;
+    /* Sets text color to white for contrast */
+    width: 100vw; /* Ensures the section covers the full viewport width */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+.about-us-content {
+    max-width: 800px; /* Limits content width */
+    margin: 0 auto; /* Centers content horizontally */
+    padding: 20px; /* Adds padding inside the content box */
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent background for readability */
+    border-radius: 8px; /* Rounds corners of the content box */
+}
+
+.about-us h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 2.5em; /* Sets font size for the heading */
+}
+
+.about-us p {
+    color: black;
+    font-size: 1.2em; /* Sets font size for paragraph */
+    line-height: 1.5; /* Adjusts line height for readability */
+}
+
+/* Pie Chart Section */
+.pie-chart-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 90%; /* Ensure it's responsive */
+}
+
+.pie-chart-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Darker text color for better readability */
+}
+
+.pie-chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 40px; /* Space between chart and details */
+}
+
+.pie-chart {
+    flex: 1;
+    max-width: 35%; /* Restrict maximum width */
+    min-width: 250px; /* Ensure the chart does not become too small */
+}
+
+.pie-chart canvas {
+    width: 100%;
+    height: auto;
+}
+
+.pie-chart-details {
+    flex: 1;
+    max-width: 50%; /* Restrict maximum width */
+    min-width: 250px; /* Ensure details section does not become too small */
+    text-align: center;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.pie-chart-details h3 {
+    margin-bottom: 10px;
+}
+
+.pie-chart-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pie-chart-details li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pie-chart-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Reduce gap on smaller screens */
+    }
+
+    .pie-chart,
+    .pie-chart-details {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .pie-chart-details {
+        text-align: center;
+    }
+}
