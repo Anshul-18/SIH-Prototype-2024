@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Space between left and right */
+    align-items: center;
+    height: inherit;
+    padding: 5px 15px; /* Reduced padding */
+    background: linear-gradient(to right, #ef8372, #5ca7e1); /* Gradient background */
+}
+
+.left-side {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.skip i,
+.gov i {
+    margin-right: 8px; /* Add spacing between the icon and the text */
+    vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+.gov a,
+.skip {
+    display: flex;
+    align-items: center;
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 200;
+    transition: color 0.3s ease-in-out;
+}
+
+.skip:hover,
+.gov a:hover {
+    color: #f0f0f0; /* Slightly lighter color on hover */
+}
+
+.divider {
+    width: 2px; /* Thin line width */
+    height: 20px; /* Line height */
+    background-color: white; /* Line color */
+    margin: 0 10px; /* Spacing around the line */
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.font-controls {
+    display: flex;
+    align-items: center;
+}
+
+.font-btn {
+    border: 2px solid white;
+    border: none;
+    /* background-color: rgba(0, 0, 0, .4); Custom background color */
+    background: transparent;
+    color: white;
+    border-color: white;
+    padding: 10px 15px; /* Increased padding for better aesthetics */
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners for aesthetic appeal */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.font-btn:hover {
+    background: rgba(255, 255, 255, 0.2);    ; /* Gradient background */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.font-btn:focus {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    outline: none; /* Remove default outline */
+}
+
+.font-btn.active {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+
+
+.language {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.language.active {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+}
+
+.language-selection {
+    display: flex;
+    align-items: center;
+}
+
+.language:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-selection span {
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.language-selection .hindi::after {
+    content: attr(title);
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.language-selection .hindi:hover::after {
+    opacity: 1;
+}
+
+/* Search Bar Styling */
+.search-form {
+    border: 2px solid white;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);    ; /* Gradient background */
+    border-color: white;
+    border-radius: 40px; /* Rounded corners */
+    padding: 3px 10px;
+    width: 200px;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.search-bar {
+    border: none;
+    background: transparent; /* Transparent background to show the gradient */
+    color: white; /* Text color */
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    width: 100%; /* Full width to fill the parent */
+    border-radius: 30px;
+}
+
+.search-bar::placeholder {
+    color: #f0f0f0; /* Placeholder text color */
+}
+
+.search-btn {
+    background: transparent; /* Transparent background to match the bar */
+    border: none;
+    color: white; /* Icon color */
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.search-btn svg {
+    fill: currentColor; /* Ensures the SVG inherits the button color */
+    width: 18px;
+    height: 18px;
+}
+.search-btn i {
+    margin-right: 0; /* Remove space between icon and text */
+}
+
+.search-btn:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls {
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .font-controls, .color-scheme, .search-form {
+        margin-left: 0;
+    }
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 10rem;
+}
+
+.logo-left,
+.logo-center,
+.logo-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo-left,
+.logo-right {
+    flex: 1;
+    justify-content: center;
+}
+
+.logo-center {
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+}
+
+.map {
+    width: 190px; /* Adjust as needed */
+    margin-right: 20px;
+}
+.emblem {
+    width: 100px; /* Adjust size as needed */
+    margin-right: 15px;
+}
+
+.symbol {
+    width: 100px;
+}
+
+.logo {
+    text-align: left;
+}
+
+.portal-title {
+    color: #008000; /* Green color */
+    margin: 5px 35px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box h1 {
+    margin: 0;
+    font-size: 26px; /* Adjust as needed */
+}
+
+.text-box h2{
+    margin: 0;
+    font-size: 22px; /*Adjust as needed*/
+    
+}
+.text-box h3 {
+    margin: 0;
+    font-size: 19px;  /*Adjust as needed*/
+}
+
+.logo-center .text-box h1 {
+    font-size: 28px; /* Larger font size for the center title */
+}
+
+.logo-center .text-box h2 {
+    font-size: 18px; /* Larger font size for the center subtitle */
+}
+
+nav {
+    background-color: #f2f2f2; /* Light gray */
+    padding: 15px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font here */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #003366; /* Dark blue */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6600; /* Orange color on hover */
+}
+/* Add styles for the login button */
+.login-btn {
+    border: 2px solid white;
+    background-color: #5da7e0; /* Dark blue background */
+    color: white;/* White text */
+    padding: 8px 15px; /* Padding around the text */
+    border-radius: 20px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+}
+
+.login-btn:hover {
+    background-color: white; /* Change to orange on hover */
+    color: orange; /* Dark blue text on hover */
+}
+
+.login-btn:focus {
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Marquee Container */
+.marquee-container {
+    background-color: #003366; /* Dark blue background */
+    color: white; /* White text */
+    padding: 10px 0; /* Padding around the content */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative for absolute child */
+}
+
+/* Marquee Content */
+.marquee {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    white-space: nowrap; /* Prevent wrapping */
+    animation: marquee 15s linear infinite; /* Animation for scrolling effect */
+    transition: animation 0.3s ease; /* Smooth transition for animation */
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee {
+    animation-play-state: paused; /* Pause animation */
+}
+
+/* Marquee Icons */
+.marquee-content i {
+    margin: 0 10px; /* Spacing around icons */
+    font-size: 24px; /* Icon size */
+    color: #ff6600; /* Orange color for icons */
+}
+
+/* Marquee Text */
+.marquee-content {
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Bold text */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}

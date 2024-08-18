@@ -1,3 +1,106 @@
+
+
+<head>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <script src="script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    
+</head>
+
 <body>
-    Hello I'm navbar
+    <header>
+        <div class="top-bar">
+            <div class="left-side">
+                <a href="main.html" class="skip"><i class="bi bi-arrow-down-right-circle"></i><span class="ml-2">Skip to
+                        Main Content</span></a>
+                <span class="divider"></span>
+                <span class="gov"><a href="raj.html"><i class="bi bi-globe"></i>Govt. of Rajasthan</a></span>
+            </div>
+            <div class="controls">
+                <div class="language-selection">
+                    <span class="language english active">English</span>
+                    <span class="language hindi" title="This support is not available in current version">हिंदी</span>
+                </div>
+                <span class="divider"></span>
+                <div class="font-controls">
+                    <button id="increase-font" class="font-btn">A+</button>
+                    <button id="original-font" class="font-btn">A</button>
+                    <button id="decrease-font" class="font-btn">A-</button>
+                </div>
+                <span class="divider"></span>
+                <form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" name="q" placeholder="Search" class="search-bar">
+                    <button type="submit" class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16" class="bi bi-search">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+        <div class="logo-section">
+            <div class="logo-left">
+                <img src="/images/dte_logo.jpg" alt="Emblem" class="emblem">
+                <div class="text-box">
+                    <h2>Department of Technical Education </h2>
+                    <h3>Government of Rajasthan</h3>
+                </div>
+            </div>
+            <div class="logo-center">
+                <img src="/images/logo.jpg" alt="Symbol" class="symbol">
+                <div class="text-box">
+                    <h1>Raj Kaushal</h1>
+                    <h2>Rajasthan Skill & Employment Exchange Portal</h2>
+                </div>
+            </div>
+            <div class="logo-right">
+                <img src="/images/Emblem.png" alt="Emblem" class="emblem">
+                <div class="text-box">
+                    <h2>Government Of</h2>
+                    <h1>Rajasthan</h1>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">JOB SEEKER (FIND A JOB)</a></li>
+            <li><a href="#">EMPLOYER (LIST A JOB)</a></li>
+            <li><a href="#">PLACEMENT CELL</a></li>
+            <li><a href="#">COUNSELLING </a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">SCHEMES</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            <li><a href="#" class="login-btn">LOGIN</a></li>
+        </ul>
+    </nav>
+
+        <!-- Marquee Section -->
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <i class="bi bi-briefcase"></i> New Job Releases! Check out the latest openings!
+                    <i class="bi bi-briefcase"></i> Job Alert: Exciting Opportunities Await!
+                    <i class="bi bi-briefcase"></i> Don't Miss Out: Latest Job Openings Updated!
+                </div>
+            </div>
+        </div>
+        
 </body>
+
