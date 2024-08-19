@@ -39,3 +39,7 @@ app.get("/login", (req, res) => {
 app.get("/jobs", (req, res) => {
     res.render("jobs/listing");
 });
+
+app.get("/signup", (req, res) => {
+    res.render("users/signup");
+});

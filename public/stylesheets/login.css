@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+.login-body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login-container {
+    height: 30rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem /* Small margin on all sides */
+}
+
+.login-container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.login-container span {
+    font-size: 12px;
+}
+
+.login-container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+    display: inline-block;
+}
+
+.login-container button {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 35%;
+    margin: 5rem;
+
+}
+
+.login-image-container{
+    width: 50%;
+    height: 100%;
+}
+
+.login-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* @media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container input,
+    .container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+} */
+
+/* @media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .container input,
+    .container button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+} */
