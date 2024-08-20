@@ -1,0 +1,181 @@
+
+<head>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheets/student/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-body">
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-user'></i>
+			<span class="text">JOB SEEKER</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="/student/dashboard">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/profile">
+					<i class='bx bx-user-circle'></i>
+					<span class="text">Profile Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/job_search">
+					<i class='bx bx-search-alt'></i>
+					<span class="text">Job Search</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/app_status">
+					<i class='bx bx-file'></i>
+					<span class="text">Application Tracking</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/counselling">
+					<i class='bx bx-support'></i>
+					<span class="text">Counseling Sessions</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/mentorship">
+					<i class='bx bx-chalkboard'></i>
+					<span class="text">Mentorship Programs</span>
+				</a>
+			</li>
+			<li>
+				<a href="/student/feedback">
+					<i class='bx bx-message-square-detail'></i>
+					<span class="text">Feedback & Support</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu'></i>
+			<form action="#">
+				<div class="form-input">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="/images/student_pic.png" alt="USER IMAGE">
+			</a>
+		</nav>
+
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download Profile</span>
+				</a>
+			</div>
+            <ul class="box-info">
+				<li>
+					<i class='bx bx-briefcase'></i>
+					<span class="text">
+						<h3>4</h3>
+						<p>Jobs Applied</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-time'></i>
+					<span class="text">
+						<h3>2</h3>
+						<p>Interviews Scheduled</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bx-award'></i>
+					<span class="text">
+						<h3>1</h3>
+						<p>Job Offers</p>
+					</span>
+				</li>
+			</ul>
+			<div class="table-data" style="margin-top:4rem;">
+				<div><h1>User Information</h1>
+					<img src="/images/student_pic.png" alt="" style="height: 10rem;">
+				</div>
+				
+				<div class="order">
+					<div class="order-box box1">
+						<div>
+							<p class="new-p-tags"><strong>Full Name:</strong> </p> <p class="new-p-tags" id="name">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Email Address:</strong> </p> <p class="new-p-tags" id="email">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Phone Number:</strong> </p> <p class="new-p-tags" id="phone">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Date of Birth:</strong> </p> <p class="new-p-tags" id="dob">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Highest Qualification:</strong> </p> <p class="new-p-tags" id="qualification">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Field of Study:</strong> </p> <p class="new-p-tags" id="field_of_study">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>University/College:</strong> </p> <p class="new-p-tags" id="university">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Year of Graduation:</strong> </p> <p class="new-p-tags" id="graduation_year">Loading...</p>
+						</div>
+					</div>
+					<div class="order-box box2">
+						<div>
+							<p class="new-p-tags"><strong>Current Employment Status:</strong> </p> <p class="new-p-tags" id="employment_status">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Current Job Title:</strong> </p> <p class="new-p-tags" id="job_title">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Years of Experience:</strong> </p> <p class="new-p-tags" id="experience_years">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Industry Preference:</strong> </p> <p class="new-p-tags" id="industry_preference">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Preferred Job Location(s):</strong> </p> <p class="new-p-tags" id="job_location">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Resume:</strong> </p> <p class="new-p-tags" id="resume">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>LinkedIn URL:</strong> </p> <p class="new-p-tags" id="linkedin_url">Loading...</p>
+						</div>
+						<div>
+							<p class="new-p-tags"><strong>Job Alerts Preferences:</strong> </p> <p class="new-p-tags" id="job_alerts">Loading...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/javascripts/student/dashboard.js"></script>
+</body>

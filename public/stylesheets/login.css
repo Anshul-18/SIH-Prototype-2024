@@ -111,6 +111,18 @@
     border-bottom-right-radius: 20px;
 }
 
+.signin-submit-btn a{
+ font-size: 12px;
+ color: white;
+ text-decoration: none;
+}
+
+.signin-submit-btn a:hover{
+  color: white;
+  scale: 1.2;
+  text-decoration: none;
+}
+
 /* Media Queries for Responsiveness */
 
 /* @media (max-width: 768px) {

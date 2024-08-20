@@ -1,0 +1,119 @@
+
+<head>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheets/student/counselling.css">
+<body>
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-user'></i>
+			<span class="text">JOB SEEKER</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bx-user-circle'></i>
+					<span class="text">Profile Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="job_search.html">
+					<i class='bx bx-search-alt'></i>
+					<span class="text">Job Search</span>
+				</a>
+			</li>
+			<li>
+				<a href="application_tracking.html">
+					<i class='bx bx-file'></i>
+					<span class="text">Application Tracking</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="counseling_sessions.html">
+					<i class='bx bx-support'></i>
+					<span class="text">Counseling Sessions</span>
+				</a>
+			</li>
+			<li>
+				<a href="mentorship_programs.html">
+					<i class='bx bx-chalkboard'></i>
+					<span class="text">Mentorship Programs</span>
+				</a>
+			</li>
+			<li>
+				<a href="feedback_support.html">
+					<i class='bx bx-message-square-detail'></i>
+					<span class="text">Feedback & Support</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu'></i>
+			<form action="#">
+				<div class="form-input">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="profile">
+				<img src="/images/student_pic.png" alt="USER IMAGE">
+			</a>
+		</nav>
+
+		<main>
+            <div class="container-counsel mt-5">
+                <h1 class="text-center">Counseling Sessions</h1>
+        
+                <h2 class="mt-4">Session Schedule</h2>
+                <div class="mb-3">
+                    <label for="sessionFilter">Filter by Counselor:</label>
+                    <input type="text" id="sessionFilter" class="form-control" placeholder="Enter counselor name..." oninput="filterSessions()">
+                </div>
+                <ul class="list-group" id="sessionSchedule"></ul>
+        
+                <h2 class="mt-5">Book a Session</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="counselorName">Counselor Name</label>
+                        <input type="text" class="form-control" id="counselorName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sessionDate">Date</label>
+                        <input type="date" class="form-control" id="sessionDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sessionTime">Time</label>
+                        <input type="time" class="form-control" id="sessionTime" required>
+                    </div>
+                    <button type="submit" class="jaba">Schedule Session</button>
+                </form>
+        
+                <h2 class="mt-5">Session Notes</h2>
+                <div id="sessionNotes" class="border p-3 mb-3"></div>
+        
+                <h2 class="mt-5">AI Counselor Summary</h2>
+                <div id="aiSummary" class="alert alert-info"></div>
+            </div>
+        </main>
+	</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/javascripts/student/counselling.js"></script>
+</body>

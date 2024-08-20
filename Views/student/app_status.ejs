@@ -1,0 +1,135 @@
+
+<head>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheets/student/app_status.css">
+</head>
+<body>
+    <section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-user'></i>
+			<span class="text">JOB SEEKER</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bx-user-circle'></i>
+					<span class="text">Profile Management</span>
+				</a>
+			</li>
+			<li>
+				<a href="job_search.html">
+					<i class='bx bx-search-alt'></i>
+					<span class="text">Job Search</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="application_tracking.html">
+					<i class='bx bx-file'></i>
+					<span class="text">Application Tracking</span>
+				</a>
+			</li>
+			<li>
+				<a href="counseling_sessions.html">
+					<i class='bx bx-support'></i>
+					<span class="text">Counseling Sessions</span>
+				</a>
+			</li>
+			<li>
+				<a href="mentorship_programs.html">
+					<i class='bx bx-chalkboard'></i>
+					<span class="text">Mentorship Programs</span>
+				</a>
+			</li>
+			<li>
+				<a href="feedback_support.html">
+					<i class='bx bx-message-square-detail'></i>
+					<span class="text">Feedback & Support</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle'></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+<!-- NAVBAR -->
+<nav>
+	<i class='bx bx-menu'></i>
+	<form action="#">
+		<div class="form-input">
+			<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+		</div>
+	</form>
+	<input type="checkbox" id="switch-mode" hidden>
+	<label for="switch-mode" class="switch-mode"></label>
+	<a href="#" class="profile">
+		<img src="/images/student_pic.png" alt="USER IMAGE">
+	</a>
+</nav>
+<!-- NAVBAR -->
+ <main>
+    <div class="container-application mt-5">
+        <h1 class="text-center">Application Tracker</h1>
+        <div class="filter-section mb-4">
+            <label for="statusFilter">Filter by Status:</label>
+            <select id="statusFilter" class="form-control w-50" onchange="filterApplications()">
+                <option value="all">All</option>
+                <option value="applied">Applied</option>
+                <option value="under review">Under Review</option>
+                <option value="interview scheduled">Interview Scheduled</option>
+                <option value="rejected">Rejected</option>
+                <option value="accepted">Accepted</option>
+            </select>
+        </div>
+
+        <div class="application-list-section">
+            <h2>Application List</h2>
+            <ul class="list-group" id="applicationList"></ul>
+        </div>
+
+        <div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="applicationModalLabel">Application Details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalDetailsContent">
+                  <!-- Dynamic content goes here -->
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="interview-schedule-section mt-5">
+            <h2>Interview Schedule</h2>
+            <ul class="list-group" id="interviewSchedule"></ul>
+        </div>
+
+        <div class="status-updates-section mt-5">
+            <h2>Application Status Updates</h2>
+            <div id="statusUpdates"></div>
+        </div>
+    </div>
+ </main>
+	</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/javascripts/student/app_status.js"></script>
+</body>

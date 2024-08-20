@@ -43,3 +43,32 @@ app.get("/jobs", (req, res) => {
 app.get("/signup", (req, res) => {
     res.render("users/signup");
 });
+
+app.get("/student/app_status", (req, res) => {
+    res.render("student/app_status");
+});
+
+app.get("/student/counselling", (req, res) => {
+    res.render("student/counselling");
+});
+
+app.get("/student/dashboard", (req, res) => {
+  res.render("student/dashboard");
+});
+
+app.get("/student/feedback", (req, res) => {
+    res.render("student/feedback");
+});
+
+app.get("/student/job_search", (req, res) => {
+    res.render("student/job_search");
+});
+
+app.get("/student/mentorship", (req, res) => {
+    res.render("student/mentorship");
+});
+
+
+app.get("/student/profile", (req, res) => {
+  res.render("student/profile");
+});
