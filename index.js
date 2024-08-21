@@ -8,7 +8,7 @@ const port = 3000;
 
 // Set EJS as the view engines
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'Views'));
 app.engine('ejs', ejsMate); 
 
 // Middleware to parse JSON and URL-encoded data

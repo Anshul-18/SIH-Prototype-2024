@@ -23,6 +23,12 @@
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
 
+## Demo 
+Checkout the live demo of the project [here](https://tech-titans-sih-2024.vercel.app/)
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
+
+
 ## About<!-- Required -->
 <!-- 
 * information about the project 
