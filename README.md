@@ -35,6 +35,7 @@ Checkout the live demo of the project [here](https://tech-titans-sih-2024.vercel
 -->
 <div>
 Creating a prototype for the "Raj Kaushal" website.
+    <a href="https://tech-titans-sih-2024.vercel.app/">view</a>
 </div>
 <br>
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png">
