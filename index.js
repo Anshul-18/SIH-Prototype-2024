@@ -6,7 +6,7 @@ const ejsMate = require("ejs-mate");
 const app = express();
 const port = 3000;
 
-// Set EJS as the view engine
+// Set EJS as the view engines
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.engine('ejs', ejsMate); 
