@@ -31,7 +31,7 @@ Checkout the live demo of the project [here](https://tech-titans-sih-2024.vercel
 
 ## About<!-- Required -->
 <!-- 
-* information about the project 
+* information about the project
 -->
 <div>
 Creating a prototype for the "Raj Kaushal" website.
@@ -53,6 +53,9 @@ cd SIH-Prototype-2024
 ```bash
 npm install
 ```
+
 4. Run Server
 ```bash
-node app.js
+node index.js
+```
+

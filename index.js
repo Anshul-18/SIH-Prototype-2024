@@ -68,7 +68,10 @@ app.get("/student/mentorship", (req, res) => {
     res.render("student/mentorship");
 });
 
-
 app.get("/student/profile", (req, res) => {
   res.render("student/profile");
+});
+
+app.get("/student/authetication",(req,res)=>{
+    res.redirect('/student/dashboard');
 });

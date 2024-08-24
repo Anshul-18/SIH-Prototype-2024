@@ -7,7 +7,7 @@
 <div class="login-body">
     <div class="login-container container " id="container" style="width: 70%;">
         <div class="login-form-container">
-            <form>
+            <form action="/student/authetication" method="get">
                 <h1>Sign In</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -16,10 +16,10 @@
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for sign in</span>
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="pswd">
                 <a href="#">Forget Your Password?</a>
-                <button class="signin-submit-btn"><a href="/student/dashboard">Sign In</a></button>
+                <button class="signin-submit-btn">Sign In</a></button>
                 <a href="/signup" class="signup-link">Don't have an account? Sign Up</a>
             </form>
         </div>
